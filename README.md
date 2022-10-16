@@ -1,7 +1,9 @@
 <h1 align="center">Hi 👋, I'm Hassan</h1>
-<h3 align="center">A passionate react developer from India</h3>
+<h3 align="center">A passionate Javascript developer from India</h3>
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
+<h3 align="left">Languages Stats:</h3>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codeblooded47&layout=compact&theme=dracula"/>
 
 
 <h3 align="left">Languages and Tools:</h3>
