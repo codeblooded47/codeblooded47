@@ -37,3 +37,9 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/codeblooded47"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="codeblooded47" /></a></p><br><br>
+<br>
+<hr>
+
+<a href="https://visitcount.itsvg.in">
+  <img src="https://visitcount.itsvg.in/api?id=codeblooded47&label=Profile%20Views&color=0&icon=0&pretty=false" />
+</a>
