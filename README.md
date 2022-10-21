@@ -4,7 +4,7 @@
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 <h3 align="left">Stats:</h3>
 <div style="display:flex;">
-<img src="https://github-readme-stats.vercel.app/api?username=codeblooded47&show_icons=true&theme=dracula" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=codeblooded47&theme=dracula&hide_border=false" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codeblooded47&layout=compact&theme=dracula" />
 
