@@ -29,6 +29,8 @@
 <a href="https://auth.geeksforgeeks.org/user/codeblooded47" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="codeblooded47" height="30" width="40" /></a>
 <a href="https://www.topcoder.com/members/codeblooded47" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg" alt="codeblooded47" height="30" width="40" /></a>
 </p>
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <h1 align="left">Support:</h1>
 <p><a href="https://www.buymeacoffee.com/codeblooded47"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="codeblooded47" /></a></p><br><br>
