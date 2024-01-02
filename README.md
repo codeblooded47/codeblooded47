@@ -29,7 +29,10 @@
 <a href="https://auth.geeksforgeeks.org/user/codeblooded47" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="codeblooded47" height="30" width="40" /></a>
 <a href="https://www.topcoder.com/members/codeblooded47" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg" alt="codeblooded47" height="30" width="40" /></a>
 </p>
+
+
 <!--START_SECTION:waka-->
+
 ![Code Time](http://img.shields.io/badge/Code%20Time-49%20hrs%2048%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
@@ -81,12 +84,3 @@ Mac                      45 hrs 8 mins       ███████████�
  Last Updated on 02/01/2024 12:04:47 UTC
 <!--END_SECTION:waka-->
 
-<h1 align="left">Support:</h1>
-<p><a href="https://www.buymeacoffee.com/codeblooded47"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="codeblooded47" /></a></p><br><br>
-<br>
-<hr>
-<a href="https://wakatime.com/@018ca796-8cec-45b4-b3a8-5f274553b81a"><img src="https://wakatime.com/badge/user/018ca796-8cec-45b4-b3a8-5f274553b81a.svg?style=flat-square" alt="Total time coded since Dec 27 2023" /></a>
-<br>
-<a href="https://visitcount.itsvg.in">
-  <img src="https://visitcount.itsvg.in/api?id=codeblooded47&label=Profile%20Views&color=0&icon=0&pretty=false" />
-</a>
