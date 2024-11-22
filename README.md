@@ -42,18 +42,16 @@ Sunday                   834 commits         ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Other                    20 mins             █████████████░░░░░░░░░░░░   50.73 % 
-HTTP Request             19 mins             ████████████░░░░░░░░░░░░░   49.27 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Terminal                 20 mins             █████████████░░░░░░░░░░░░   50.73 % 
-Postman                  19 mins             ████████████░░░░░░░░░░░░░   49.27 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      40 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 
- Last Updated on 21/11/2024 00:40:53 UTC
+ Last Updated on 22/11/2024 00:41:31 UTC
 <!--END_SECTION:waka-->
 
