@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Hassan - Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #0f172a;
+        --secondary: #475569;
+        --accent: #2563eb;
+        --border: #e2e8f0;
+        --bg-gray: #f8fafc;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 10pt;
+        line-height: 1.5;
+        color: var(--primary);
+        background: #eef2f6;
+        padding: 20px;
+      }
+
+      .resume-container {
+        width: 210mm;
+        max-width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 40px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      h1 {
+        font-size: 24pt;
+        font-weight: 800;
+        color: var(--primary);
+        letter-spacing: -0.5px;
+        margin-bottom: 8px;
+        line-height: 1.2;
+      }
+      .contact-bar {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 9pt;
+        flex-wrap: wrap;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--secondary);
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: background 0.2s, color 0.2s;
+      }
+      .contact-item:hover {
+        color: var(--accent);
+        background: #f1f5f9;
+      }
+      .icon {
+        width: 14px;
+        height: 14px;
+        fill: currentColor;
+        flex-shrink: 0;
+      }
+
+      h2 {
+        font-size: 11pt;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 8px;
+        margin: 25px 0 15px 0;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 700;
+      }
+
+      .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5pt;
+      }
+      .skills-table td {
+        padding: 4px 0;
+        vertical-align: top;
+      }
+      .skill-cat {
+        font-weight: 700;
+        width: 150px;
+        color: var(--primary);
+      }
+      .skill-list {
+        color: var(--secondary);
+      }
+
+      .github-graph-container {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 10px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+      }
+      .github-chart {
+        width: 100%;
+        height: auto;
+        display: block;
+        min-height: 100px;
+      }
+
+      .entry {
+        margin-bottom: 20px;
+        break-inside: avoid;
+      }
+      .entry-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 6px;
+      }
+      .header-group {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        flex: 1;
+      }
+      .logo-img {
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        object-fit: cover;
+        background: #f1f5f9;
+        flex-shrink: 0;
+      }
+      .title-group {
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-size: 10.5pt;
+        font-weight: 700;
+        color: var(--primary);
+        line-height: 1.3;
+      }
+      .company {
+        font-size: 10.5pt;
+        font-weight: 500;
+        color: var(--accent);
+        line-height: 1.3;
+      }
+      .date {
+        font-size: 9pt;
+        color: #64748b;
+        white-space: nowrap;
+        padding-top: 2px;
+        margin-left: 10px;
+      }
+
+      .stack {
+        display: inline-block;
+        background-color: var(--bg-gray);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 2px 8px;
+        font-size: 8.5pt;
+        font-family: "Consolas", monospace;
+        color: var(--secondary);
+        font-weight: 600;
+        margin-top: 4px;
+      }
+
+      /* Dynamic Adjustment when logos are hidden */
+      .no-logo ul {
+        margin-left: 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 48px;
+      }
+      li {
+        position: relative;
+        padding-left: 14px;
+        margin-bottom: 4px;
+        /* color: var(--secondary); */
+        font-size: 9.5pt;
+      }
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 10px;
+          background: #fff;
+        }
+        .resume-container {
+          width: auto;
+          padding: 15px;
+          box-shadow: none;
+        }
+        .contact-bar {
+          flex-direction: column;
+          align-items: center;
+        }
+        .entry-top {
+          flex-direction: column;
+        }
+        .date {
+          margin-left: 48px;
+          margin-bottom: 8px;
+        }
+        .no-logo .date {
+          margin-left: 0;
+        }
+        ul {
+          margin-left: 0;
+        }
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+        }
+        .resume-container {
+          width: 100%;
+          max-width: none;
+          box-shadow: none;
+          padding: 40px;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container" id="resume-app"></div>
+
+    <script>
+      const resumeData = {
+        // TOGGLE LOGOS HERE
+        settings: {
+          showEducationImages: false,
+          showExperienceImages: false,
+          showProjectImages: false,
+        },
+        personal: {
+          name: "Mohammad Hassan",
+          email: "mohdhassandbg@gmail.com",
+          linkedin: "https://linkedin.com/in/codeblooded47",
+          github: "https://github.com/codeblooded47",
+          githubUser: "codeblooded47",
+        },
+        skills: [
+          {
+            cat: "Languages:",
+            list: "TypeScript, JavaScript, Go (Golang), Python",
+          },
+          {
+            cat: "Frameworks:",
+            list: "React, React Native, Next.js, NestJS, Moleculer.js",
+          },
+          {
+            cat: "Cloud & Infrastructure:",
+            list: "Azure, Google Cloud Platform, AWS, Docker",
+          },
+          {
+            cat: "Databases:",
+            list: "MongoDB, MySQL, Postgres",
+          },
+          {
+            cat: "Tools:",
+            list: "VIM, CI/CD Pipelines",
+          },
+        ],
+        education: [
+          {
+            school: "G L Bajaj Group of Institutions",
+            degree:
+              "Graduate, B.Tech in Computer Science and Engineering (India)",
+            date: "Mar 2021 - Jul 2025",
+            logoName: "GL Bajaj",
+            logoBg: "000",
+          },
+        ],
+        experience: [
+          {
+            title: "Backend Developer",
+            company: "OPIN Technologies (Remote)",
+            link: "https://opintech.com/",
+            date: "Oct 2023 - July 2025",
+            logoName: "OPIN",
+            logoBg: "0f172a",
+            bullets: [
+              "Architected a high-volume financial transaction system processing millions in daily payments, ensuring strict security and compliance standards.",
+              "Automated KYC verification for thousands of concurrent users, reducing manual onboarding time by over 70%.",
+              "Streamlined deployment by designing CI/CD pipelines to automate testing and scaling across all applications.",
+              "Engineered a high-availability USSD and WhatsApp menu platform supporting thousands of concurrent users with fault tolerance.",
+              "Exposed secure banking and KYC APIs through a scalable third-party portal for partner and vendor integrations.",
+            ],
+          },
+          {
+            title: "Founding Engineer",
+            company: "Dreamprovider Pvt. Ltd",
+            link: "https://providerapp.in/",
+            date: "Jul 2022 - Sep 2022",
+            logoName: "Dream Provider",
+            logoBg: "2563eb",
+            bullets: [
+              "Built the entire backend architecture, mobile applications (iOS/Android), and administrative panels from scratch.",
+              "Scaled the technology team and infrastructure to support 10,000+ users upon initial launch.",
+              "Integrated secure payment gateways and partner systems to facilitate seamless business operations.",
+              "Managed and scaled the technology team, fostering innovation and staying ahead of industry trends.",
+            ],
+          },
+          {
+            title: "Technical Assistant",
+            company: "Cramer Müller & Partner (Remote)",
+            link: "https://cmundp.de/",
+            date: "Nov 2021 - May 2022",
+            logoName: "Cramer Muller",
+            logoBg: "475569",
+            bullets: [
+              "Led a team of 3 developers through architecture planning and feature development for a scalable microservices platform.",
+              "Developed a backend CRM and sales portal using Node.js and Docker to support third-party integrations.",
+              "Enhanced collaboration by creating a live chat and comments system integrated directly into the Power BI platform.",
+            ],
+          },
+          {
+            title: "Full Stack Engineer",
+            company: "Freelancer (Remote)",
+            link: "https://www.truelancer.com/freelancer/sharimsharim",
+            date: "Nov 2020 - Nov 2021",
+            logoName: "Freelancer",
+            logoBg: "111",
+            bullets: [
+              "Delivered over 20 end-to-end web and mobile projects for global clients using React, Next.js, and Node.js.",
+              "Maintained high client satisfaction with an average 4.3/5 rating across all delivered applications.",
+            ],
+          },
+        ],
+        projects: [
+          {
+            title: "Myles Pudo – Backend Developer",
+            stack: "Go-lang, GraphQL, Postgres",
+            link: "https://www.mylespudo.com/#team",
+            date: "Aug 2025 - Present",
+            logoName: "Myles Pudo",
+            logoBg: "f59e0b",
+            bullets: [
+              "Built scalable Go-based backend services with GraphQL APIs to handle automated payouts and rewards for drivers and partners.",
+              "Designed a complex referral system to track and calculate rewards across a multi-tier business network.",
+            ],
+          },
+          {
+            title: "VuPrep – FullStack Developer",
+            stack: "Node.js, TypeScript, Next.js, MongoDB, NestJS, Azure",
+            link: "https://vuprep.com/",
+            date: "Jun 2025 - Present",
+            logoName: "VuPrep",
+            logoBg: "10b981",
+            bullets: [
+              "Developed an AI-powered platform for mock interview practice and communication skill improvement.",
+              "Engineered REST APIs using NestJS and built the responsive user interface using Next.js.",
+            ],
+          },
+          {
+            title: "CraneSeeker - Backend Developer",
+            stack: "Node.js, TypeScript, Next.js, Moleculer.js, AWS",
+            link: "https://craneseeker.com/",
+            date: "Oct 2024 - Apr 2025",
+            logoName: "CraneSeeker",
+            logoBg: "8b5cf6",
+            bullets: [
+              "Optimized vendor response times by 50% through a microservices-based crane booking platform.",
+              "Developed comprehensive REST APIs for back-office, client, and seller portals.",
+            ],
+          },
+          {
+            title: "Damsyn Ecommerce – Backend Developer",
+            stack: "NestJS, Postgres",
+            link: "https://damsyn.com",
+            date: "May 2024 - Dec 2024",
+            logoName: "Damsyn",
+            logoBg: "ec4899",
+            bullets: [
+              "Developed and maintained NestJS-based backend services for product catalog, ordering, and payment workflows.",
+              "Optimized database queries and caching to improve API response time by 40%.",
+              "Ensured secure handling of customer and order data with proper authentication.",
+            ],
+          },
+        ],
+      };
+      function renderResume() {
+        const app = document.getElementById("resume-app");
+        const { settings } = resumeData;
+
+        const html = `
+        <header>
+            <h1>${resumeData.personal.name}</h1>
+            <div class="contact-bar">
+                <a href="mailto:${
+                  resumeData.personal.email
+                }" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    ${resumeData.personal.email}
+                </a>
+                <a href="${resumeData.personal.linkedin}" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    ${resumeData.personal.linkedin.replace("https://", "")}
+                </a>
+                <a href="${resumeData.personal.github}" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    ${resumeData.personal.github.replace("https://", "")}
+                </a>
+            </div>
+        </header>
+
+        <section>
+            <h2><svg class="icon" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/></svg> Technical Skills</h2>
+            <table class="skills-table">
+                ${resumeData.skills
+                  .map(
+                    (s) =>
+                      `<tr><td class="skill-cat">${s.cat}</td><td class="skill-list">${s.list}</td></tr>`
+                  )
+                  .join("")}
+            </table>
+        </section>
+
+
+        <section class="${settings.showEducationImages ? "" : "no-logo"}">
+            <h2><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg> Education</h2>
+            ${resumeData.education
+              .map(
+                (edu) => `
+                <div class="entry">
+                    <div class="entry-top">
+                        <div class="header-group">
+                            ${
+                              settings.showEducationImages
+                                ? `<img src="https://ui-avatars.com/api/?name=${edu.logoName.replace(
+                                    / /g,
+                                    "+"
+                                  )}&background=${
+                                    edu.logoBg
+                                  }&color=fff&size=64" class="logo-img">`
+                                : ""
+                            }
+                            <div class="title-group">
+                                <span class="title">${edu.school}</span>
+                                <span class="company">${edu.degree}</span>
+                            </div>
+                        </div>
+                        <span class="date">${edu.date}</span>
+                    </div>
+                </div>
+            `
+              )
+              .join("")}
+        </section>
+
+        <section class="${settings.showExperienceImages ? "" : "no-logo"}">
+            <h2><svg class="icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg> Work Experience</h2>
+            ${resumeData.experience
+              .map(
+                (exp) => `
+                <div class="entry">
+                    <div class="entry-top">
+                        <div class="header-group">
+                            ${
+                              settings.showExperienceImages
+                                ? `<img src="https://ui-avatars.com/api/?name=${exp.logoName.replace(
+                                    / /g,
+                                    "+"
+                                  )}&background=${
+                                    exp.logoBg
+                                  }&color=fff&size=64" class="logo-img">`
+                                : ""
+                            }
+                            <div class="title-group" style="flex-direction: row; align-items: baseline; gap: 6px;">
+                                <span class="title">${exp.title}</span>
+                                <span class="title" style="font-weight: 400; color: var(--secondary);">-</span>
+                                <span class="company">${
+                                  exp.link
+                                    ? `<a href="${exp.link}" target="_blank">${exp.company}</a>`
+                                    : exp.company
+                                }</span>
+                            </div>
+                        </div>
+                        <span class="date">${exp.date}</span>
+                    </div>
+                    <ul>${exp.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
+                </div>
+            `
+              )
+              .join("")}
+        </section>
+
+        <section class="${settings.showProjectImages ? "" : "no-logo"}">
+            <h2><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Projects</h2>
+            ${resumeData.projects
+              .map(
+                (proj) => `
+                <div class="entry">
+                    <div class="entry-top">
+                        <div class="header-group">
+                            ${
+                              settings.showProjectImages
+                                ? `<img src="https://ui-avatars.com/api/?name=${proj.logoName.replace(
+                                    / /g,
+                                    "+"
+                                  )}&background=${
+                                    proj.logoBg
+                                  }&color=fff&size=64" class="logo-img">`
+                                : ""
+                            }
+                            <div class="title-group">
+                                <span class="title">${
+                                  proj.link
+                                    ? `<a href="${proj.link}" target="_blank">${proj.title}</a>`
+                                    : proj.title
+                                }</span>
+                                <span class="stack">Stack: ${proj.stack}</span>
+                            </div>
+                        </div>
+                        <span class="date">${proj.date}</span>
+                    </div>
+                    <ul>${proj.bullets
+                      .map((b) => `<li>${b}</li>`)
+                      .join("")}</ul>
+                </div>
+            `
+              )
+              .join("")}
+        </section>
+    `;
+        app.innerHTML = html;
+      }
+
+      renderResume();
+    </script>
+  </body>
+</html>
